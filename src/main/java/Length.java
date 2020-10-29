@@ -16,7 +16,7 @@ public class Length {
         double value = this.value;
         if (this.unit == Unit.FOOT) {
             if (target == Unit.YARD) {
-                value = this.value / 3;
+                return this.value / 3;
             } else if (target == Unit.INCH) {
                 value = this.value * 12;
             }
