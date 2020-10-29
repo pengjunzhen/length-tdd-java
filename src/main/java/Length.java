@@ -28,7 +28,7 @@ public class Length {
         return temp_unit;
     }
 
-    public Length temp_as(String targetUnit, Unit temp_unit) {
+    public Length temp_as(Unit temp_unit) {
         Length result = this;
         if (this.unit.equals(Length.FOOT)) {
             if (temp_unit == Unit.YARD) {
